@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="center" prefHeight="200" prefWidth="300" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+
+    <fx:define>
+        <ToggleGroup fx:id="toggleGroup" />
+    </fx:define>
+    
+    <RadioButton fx:id="e" alignment="BASELINE_CENTER" text="Easy" toggleGroup="$toggleGroup"/>
+    <RadioButton fx:id="m" alignment="BASELINE_CENTER" text="Medium" toggleGroup="$toggleGroup" />
+    <RadioButton fx:id="d" alignment="BASELINE_CENTER" text="Difficult" toggleGroup="$toggleGroup" />
+
+    <Label fx:id="label" text="My name is Mayank" />
+
+    <Button fx:id="button" onAction="#handleAction" text="This is my button" />
+
+
+
+</VBox>
